@@ -1,0 +1,28 @@
+<nav class=" navbar navbar-toggleable-md navbar-inverse bg-inverse ">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav container">
+            <li class="nav-item navBar">
+                <a ui-sref="about us" ui-sref-active="active" class="nav-link"><i  aria-hidden="true"></i> About Us<span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item navBar">
+                <a ui-sref="images" ui-sref-active="active" class="nav-link"><i  aria-hidden="true"></i>  Images </a>
+            </li>
+
+            <li class="nav-item navBar">
+                <a ui-sref="opening hours" ui-sref-active="active" class="nav-link"> <i  aria-hidden="true"> </i> <i aria-hidden="true"></i> Opening Hours</a>
+            </li>
+            <li>
+
+                <div class="uploadDiv">
+                    <div class="button nav-item navBar nav-link" ngf-select="vm.uploadHandler($file)"> <i class="fa fa-upload" aria-hidden="true"></i> Upload A Logo File</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

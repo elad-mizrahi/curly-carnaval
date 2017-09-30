@@ -1,0 +1,15 @@
+<div>
+    <form class="container formContainer">
+        <lable for="name">Business</lable>
+        <input type="text" id="name" class="form-control" ng-model="vm.name" ng-required="true" placeholder="name" ng-change="vm.addAboutUs()"><br>
+
+        <lable for="description">Description</lable>
+        <textarea type="text" id="description" class="form-control" ng-model="vm.description" ng-required="true" placeholder="about the company..."
+            ng-change="vm.addAboutUs()"></textarea><br>
+
+        <lable for="url">Website URL</lable>
+        <input type="url" id="url" class="form-control" ng-model="vm.url" ng-required="true" placeholder="enter a valid url..."
+            ng-change="vm.addAboutUs()"><br>
+       
+    </form>
+</div>

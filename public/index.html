@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Creator Project</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css">
+    <link rel="png" type="image/png" sizes="32x32" href="/public/favicon.png">
+
+
+</head>
+
+<body ng-app="appCreator">
+
+    <nav-bar></nav-bar>
+
+    <div class="both" ng-controller="dataStore as ds">
+        <ui-view></ui-view>
+
+        <phone-display hero="ds.data.name" description="ds.data.description" url="ds.data.url" images="ds.data.images" hours="ds.data.openingHours"
+            css="ds.data.css">
+        </phone-display>
+    </div>
+
+
+
+    <script src="/app.js"></script>
+    <script src="/vendors/ng-file-upload.min.js"></script>
+    <script src="/app/controllers/dataStore-controller.js"></script>
+    <script src="/app/services/dataStore-service.js"></script>
+
+
+    <script src="/app/components/aboutUs/aboutUs.component.js"></script>
+    <script src="/app/components/images/images.components.js"></script>
+    <script src="/app/components/openingHours/openingHours.component.js"></script>
+    <script src="/app/components/phoneDisplay/phoneDisplay.component.js"></script>
+    <script src="/app/components/navBar/navBar.component.js"></script>
+
+</body>
+
+</html>
