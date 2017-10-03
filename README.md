@@ -37,7 +37,7 @@ The basic features of the app:
 The app runs on port 3000 by default. (localhost:3000).
 If you wish to read more about the external resources I used please check:
 
-<url>
+<ul>
     <li>CSS styling was done using <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"><strong>BootStrap</strong></a>.</li>
     <li>For Searching images I used <a href="https://pixabay.com/api/docs/"><strong> Pixabay</strong></a> API.</li>
     <li>Uploaing an image I used <a href="https://github.com/expressjs/multer"><strong> Multer.</strong></a></li>
